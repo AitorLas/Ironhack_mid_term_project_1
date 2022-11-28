@@ -1,0 +1,356 @@
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto'
+}
+
+header {
+  background-color: #F2F4FC;
+  height: 80px;
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle-logo-dimensions {
+  width: 60.53px;
+  height: 18.46px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*para hacer hamburguesa*/
+nav label {
+  width: 30px;
+  height: 30px;
+  font-size: 32px;
+  color: #072AC8;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+}
+
+nav input {
+  width: 30px;
+  height: 30px;
+  margin: 0px;
+  cursor: pointer;
+  opacity: 0; /*para ocultar el check-box*/
+  position: absolute;
+  top: 35px;
+}
+
+nav input[type='checkbox']:checked ~ ul {
+  animation: fadein 1s forwards;
+  display: block;
+}
+
+nav ul {
+  display: none;
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 45px;
+}
+
+nav li {
+  height: 18px;
+}
+
+nav a {
+  cursor: pointer;
+  text-decoration: none;
+}
+/*para hacer hamburguesa*/
+
+.nav-a-color1 {
+  color: #072AC8;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22.1px;
+}
+
+.nav-a-color2 {
+  color: #6B708D;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22.1px;
+}
+
+/* para la version desktop
+header button {
+  cursor: pointer;
+  background-color: #072AC8;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22.1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 33px;
+  padding-right: 33px;
+  border: none;
+}
+*/
+
+.button-Contact-Us {
+  cursor: pointer;
+  background-color: #072AC8;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 22.1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: none;
+}
+
+
+#Home {
+  background-color: #F2F4FC;
+  height: 600px;
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Home main {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 130px;
+}
+
+#Home article {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+}
+
+.buttons-getintouch-seeourwork {
+  display: flex;  
+  flex-direction: row;
+}
+
+.button-Get-in-touch {
+  cursor: pointer;
+  background-color: #072AC8;
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 22.1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: none;
+  position: relative;
+  top: 180px;
+  right: 10px;
+}
+
+.button-See-our-work {
+  cursor: pointer;
+  background-color: #F2F4FC;
+  color: #6B708D;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 22.1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: none;
+  position: relative;
+  top: 180px;
+  left: 10px;
+}
+
+
+
+h1 ,h2 {
+  margin: 0px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #292E47;
+}
+
+#Home article {
+  margin-top: 15px;
+}
+
+#Home p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #6B708D;
+  margin: 0px;
+}
+
+/*para version desktop
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #292E47;
+}
+*/
+
+.all-hero-images {
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1-image {
+  width: 160px;
+  position: absolute;
+  top: 320px;
+  left: 30px;
+}
+
+.hero-image {
+  width: 280px;
+  position: absolute;
+  top: 330px;
+}
+
+.card2-image {
+  width: 160px;
+  position: absolute;
+  top: 540px;
+  right: 18px;
+}
+
+.airbnb-google-etc-images {
+  width: 100%;
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.airbnb-image {
+  width: 50px;
+  filter: grayscale();
+}
+
+.google-image {
+  width: 50px;
+  filter: grayscale();
+}
+
+.microsoft-image {
+  width: 50px;
+  filter: grayscale();
+}
+
+.fedex-image {
+  width: 50px;
+  filter: grayscale();
+}
+
+.amazon-image {
+  width: 50px;
+  filter: grayscale();
+}
+
+
+#Recent-Projects {
+  background-color: #F2F4FC;
+  height: 300px;
+  padding-top: 50px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #292E47;
+  text-align: start;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.recent-projects-images {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.simplify-image {
+  width: 100px;
+}
+
+.dashcoin-image {
+  width: 100px;
+}
+
+.vectorify-image {
+  width: 100px;
+}
+
+.simplify {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dashcoin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vectorify {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#Services {
+  background-color: blueviolet;
+  height: 300px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
