@@ -301,73 +301,130 @@ h1 {
   border: none;
 }
 
-#Hear What Our Clients Have to Say {
-  background-color: rgb(19, 12, 26);
-  height: 300px;
+#HearWhatOurClientsHavetoSay {
+  background-color: #292E47;
+  margin: 50px 20px 50px 20px;
+  padding: 20px 15px 15px 20px;
 }
 
 .memoji-1-image {
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
 }
 
 .memoji-2-image {
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
 }
 
 .memoji-3-image {
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
 }
 
 .memoji-4-image {
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
 }
 
 .profile-image {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .HearWhatOurClients {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .KristinWatson {
   display: flex;
   flex-direction: row;
-}
-
-#HearWhatOurClientsHavetoSay {
-  background-color: #292E47;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #HearWhatOurClientsHavetoSay h2 {
   font-size: 12px;
   color: #F4F6FC;
+  text-align: center;
 }
 
 #HearWhatOurClientsHavetoSay h3 {
-  font-size: 12px;
+  font-size: 8px;
   color: #FFC600;
+  text-align: center;
 }
 
 #HearWhatOurClientsHavetoSay h4 {
-  font-size: 12px;
+  font-size: 6px;
   color: #A2D6F9;
+  margin: 8px 0px 2px 0px;
 }
 
 #HearWhatOurClientsHavetoSay h5 {
-  font-size: 12px;
+  font-size: 5px;
   color: #F4F6FC;
+  margin: 2px 0px 8px 0px;
 }
 
-#Services {
-  background-color: blueviolet;
-  height: 300px;
+.profile-Kristin-Booking{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.Kristin-Booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+
+
+#OurServices h2 {
+  padding: 30px 30px 30px 30px;
+}
+
+.Services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.user-interface {
+  width: 340px;
+  height: 280px;
+  margin: 10px 10px 10px 10px;
+  background-color: white;
+}
+
+.icons {
+  width: 40px;
+  border-radius: 50%;
+  background-color:#ECF7FF;
+  margin: 20px 20px 20px 20px;
+  padding: 15px 15px 15px 15px;
+}
+
+.user-interface h4 {
+  font-size: 20px;
+  margin: 20px 20px 20px 20px;
+}
+
+.user-interface h5 {
+  font-size: 12px;
+  margin: 20px 20px 20px 20px;
+}
+
+#Services a {
+  margin: 20px 20px 20px 20px;
 }
 
 @keyframes fadein {
