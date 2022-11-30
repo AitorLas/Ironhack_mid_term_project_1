@@ -1,99 +1,44 @@
-/*html,
+
 body {
-  padding: 0px;
-  margin: 0px;
   font-family: "Roboto";
   font-style: normal;
 }
 
 header {
-  background-color: #f2f4fc;
-  height: 80px;
-  padding: 10px;
-  margin: 0px;
+  margin: 60px 100px 80px 100px;
+  font-family: "Roboto";
+  font-style: normal;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.circle-logo-dimensions {
-  width: 60.53px;
-  height: 18.46px;
-}
+.header-selectors-up a {
+  text-decoration: inherit;
+  color: inherit;
 
-nav {
+  font-size: 14px;
+  color: rgba(107, 112, 141, 1);
+}
+.header-selectors-up {
+  width: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
-/*para hacer hamburguesa
-nav label {
-  width: 30px;
-  height: 30px;
-  font-size: 32px;
-  color: #072ac8;
-  cursor: pointer;
-  position: absolute;
-  top: 25px;
-}
-
-nav input {
-  width: 30px;
-  height: 30px;
-  margin: 0px;
-  cursor: pointer;
-  opacity: 0; 
-  position: absolute;
-  top: 35px;
-}
-
-nav input[type="checkbox"]:checked ~ ul {
-  animation: fadein 1s forwards;
-  display: block;
-}
-
-nav ul {
-  display: none;
-  list-style: none;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-  top: 45px;
-}
-
-nav li {
-  height: 18px;
-}
-
-nav a {
-  cursor: pointer;
-  text-decoration: none;
-}
 
 
-.nav-a-color1 {
-  color: #072ac8;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22.1px;
+
+.button-Contact-Us {
+  height: 40px;
+  width: 120px;
+  background: #072ac8;
+  color: white;
+  font-size: 15px;
+  outline: auto;
 }
 
-.nav-a-color2 {
-  color: #6b708d;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22.1px;
-}
-*/
-
-body {
-  font-family: "Roboto";
-  font-style: normal;
-}
 form {
   color: rgba(107, 112, 141, 1);
 
@@ -192,6 +137,7 @@ h1 {
   background: #072ac8;
   color: white;
   font-size: 20px;
+  outline: auto;
 }
 
 footer {
@@ -243,20 +189,72 @@ footer p {
   footer {
     margin: 30px 20px 30px 20px;
   }
-}
+  header {
+    margin: 30px 20px 40px 20px;
+  }
 
-/* para la version desktop
-  header button {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav label {
+    width: 30px;
+    height: 30px;
+    font-size: 32px;
+    color: #072ac8;
     cursor: pointer;
-    background-color: #072AC8;
-    color: #FFFFFF;
-    font-size: 17px;
+    position: absolute;
+    top: 15px;
+  }
+  
+  nav input {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0; /*para ocultar el check-box*/
+    position: absolute;
+    top: 15px;
+  }
+  
+  nav input[type="checkbox"]:checked ~ ul {
+    animation: fadein 1s forwards;
+    display: block;
+  }
+  
+  nav ul {
+    display: none;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 55px;
+  }
+  
+  nav a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .nav-a-color1 {
+    color: #072ac8;
+    font-size: 12px;
     font-weight: 500;
     line-height: 22.1px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 33px;
-    padding-right: 33px;
-    border: none;
   }
-  */
+  
+  .nav-a-color2 {
+    color: #6b708d;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22.1px;
+  }
+  
+
+}
+
+
