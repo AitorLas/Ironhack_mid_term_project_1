@@ -1,193 +1,126 @@
 html,
 body {
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Roboto'
+  font-family: 'Roboto';
+  font-style: normal;
+  background-color: #F4F6FC;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #F2F4FC;
-  height: 80px;
-  padding: 10px;
-  margin: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+main {
+  margin: 0 170px;
 }
 
-.circle-logo-dimensions {
-  width: 60.53px;
-  height: 18.46px;
+#parteSuperior li {
+  display: inline;
+  margin-left: 130px;
+ 
 }
 
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/*para hacer hamburguesa*/
-nav label {
-  width: 30px;
-  height: 30px;
-  font-size: 32px;
-  color: #072AC8;
-  cursor: pointer;
-  position: absolute;
-  top: 25px;
-}
-
-nav input {
-  width: 30px;
-  height: 30px;
-  margin: 0px;
-  cursor: pointer;
-  opacity: 0;
-  /*para ocultar el check-box*/
-  position: absolute;
-  top: 35px;
-}
-
-nav input[type='checkbox']:checked~ul {
-  animation: fadein 1s forwards;
-  display: block;
-}
-
-nav ul {
-  display: none;
-  list-style: none;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-  position: relative;
-  top: 45px;
-}
-
-nav li {
-  height: 18px;
-}
-
-nav a {
-  cursor: pointer;
+.navegador {
+  color: grey;
   text-decoration: none;
-}
-
-/*para hacer hamburguesa*/
-
-.nav-a-color1 {
-  color: #072AC8;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22.1px;
-}
-
-.nav-a-color2 {
-  color: #6B708D;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 22.1px;
+  margin-left: 70px;
 }
 
 .button-Contact-Us {
-  cursor: pointer;
   background-color: #072AC8;
-  color: #FFFFFF;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 22.1px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
   border: none;
+  padding: 10px;
+
+  color: #FFFFFF;
+  font-size: 13px;
+  margin-left: 115px;
 }
 
-/*-------------------------------------------------------------*/
+
+/* ----------PARTE SIMPLIFY --------------*/
 
 .headText h1 {
-  /* Simplify */
-  position: absolute;
-  width: 530px;
-  height: 70px;
-  left: 170px;
-  top: 90px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 60px;
-  line-height: 70px;
-
   color: #292E47;
 }
 
 .headText p {
   /*Ul Design & App Development*/
-  position: absolute;
-  width: 530px;
-  left: 170px;
-  top: 190px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 24px;
-  line-height: 28px;
-
   color: #6B708D;
+  font-size: 24px;
 }
 
 .headText span {
-  position: absolute;
-  width: 255px;
-  left: 850px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 20px;
-  line-height: 151%;
-
   color: #292E47;
+  font-size: 20px;
+
+  margin-left: 600px;
 }
 
-/*Imagem Principal*/
-.firstImg {
-  position: absolute;
-  width: 1100px;
-  height: 444px;
-  left: 170px;
-  top: 300px;
+/*-------PARTE IMAGEM--------*/
+
+.imgPrincipal {
+  background-image: url(/project-assets/projects-section/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 480px;
+  position: relative;
+  top: 20px;
+
 }
+
+/*----------PARTE PARAGRAFO-----------*/
 
 .paragrafo1 {
-  position: absolute;
-  width: 1100px;
-  height: 420px;
-  left: 170px;
-  top: 790px;
-
-  /* Body/Regular */
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
+  color: #6B708D;
   font-size: 20px;
   line-height: 150%;
-
-  color: #6B708D;
+  padding-top: 60px;
 }
 
-.secondTitle h3 {
-  position: absolute;
-  width: 400px;
-  left: 170px;
+/*---------PARTE3 PROJETOS---------*/
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 2300px;
+.secondTitle {
+  padding-top: 10px;
+  font-size: 30px;
+}
 
-  color: #292E47;
+/*----------PARTE DAS 3 IMAGENS-------*/
+
+#otherProjects {
+  padding: 30px 10px 0px 10px;
+  
+}
+
+.orbitFoto {
+  width: 340px;
+  height: 240px;
+}
+
+/*.div-simplify,
+.div-dashcoin,*/
+.orbitText {
+  width: 340px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.orbitText h3{
+  margin: 0px;
+  padding: 30px 0px 0px 30px;
+}
+
+.orbitText p {
+  padding-left: 30px;
+}
+
+.button-learn-more {
+  font-size: 15px;
+  line-height: 100px;
+  padding-left: 30px;
+  text-decoration: none;
+
 }
