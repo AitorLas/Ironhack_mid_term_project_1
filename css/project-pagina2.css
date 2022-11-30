@@ -9,28 +9,37 @@ body {
 
 main {
   margin: 0 170px;
+  }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 170px;
+  padding: 70px 0px 80px 0px;
 }
 
-#parteSuperior li {
-  display: inline;
-  margin-left: 130px;
- 
+.parteSuperior ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .navegador {
   color: grey;
   text-decoration: none;
-  margin-left: 70px;
+  margin: 40px;
 }
 
 .button-Contact-Us {
+  cursor: pointer;
   background-color: #072AC8;
   border: none;
   padding: 10px;
 
   color: #FFFFFF;
   font-size: 13px;
-  margin-left: 115px;
+
 }
 
 
@@ -48,14 +57,15 @@ main {
   font-size: 24px;
 }
 
-.headText span {
+.subtitulo {
   color: #292E47;
   font-size: 20px;
-
-  margin-left: 600px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
 }
 
-/*-------PARTE IMAGEM--------*/
+/*-------PARTE IMAGEM PRINCIPAL--------*/
 
 .imgPrincipal {
   background-image: url(/project-assets/projects-section/1.jpg);
@@ -65,7 +75,7 @@ main {
 
   height: 480px;
   position: relative;
-  top: 20px;
+  top: 60px;
 
 }
 
@@ -75,45 +85,50 @@ main {
   color: #6B708D;
   font-size: 20px;
   line-height: 150%;
-  padding-top: 60px;
+  padding-top: 120px;
 }
 
-/*---------PARTE3 PROJETOS---------*/
+/*---------PARTE PARAGR PROJETOS---------*/
 
 .secondTitle {
   padding-top: 10px;
   font-size: 30px;
 }
 
-/*----------PARTE DAS 3 IMAGENS-------*/
+/*----------PARTE DAS 3 IMAGENS PROJETOS-------*/
 
-#otherProjects {
-  padding: 30px 10px 0px 10px;
-  
+#Projects_Id {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
-.orbitFoto {
-  width: 340px;
-  height: 240px;
-}
-
-/*.div-simplify,
-.div-dashcoin,*/
-.orbitText {
-  width: 340px;
-  height: 200px;
-  background-color: white;
+.as3Colunas {
   display: flex;
   flex-direction: column;
-  
+
 }
 
-.orbitText h3{
+.medidas3Fotos {
+  height: 240px;
+  width: 340px;
+}
+
+
+.colunasText {
+  background-color: white;
+  height: 200px;
+  width: 340px;
+}
+
+.colunasText h3 {
   margin: 0px;
   padding: 30px 0px 0px 30px;
 }
 
-.orbitText p {
+.colunasText p {
   padding-left: 30px;
 }
 
@@ -123,4 +138,71 @@ main {
   padding-left: 30px;
   text-decoration: none;
 
+}
+
+/*-------Box Yellow-------*/
+#boxYellow {
+  background-color: #FFC600;
+  margin: 80px;
+  height: 500px;
+  width: 1320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxYellow h3 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+#boxYellow p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+#email {
+  padding: 15px;
+  width: 400px;
+}
+
+#botton {
+  background-color: #072AC8;
+  color: white;
+  padding: 15px;
+  width: 140px;
+}
+
+/*-------------FOOTER-----------*/
+footer {
+  margin: 40px 100px 30px 100px;
+  color: rgba(107, 112, 141, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  font-size: 9px;
+}
+.footer-selectors a {
+  text-decoration: inherit;
+  color: inherit;
+  width: 33%;
+  font-size: 11px;
+}
+
+.footer-selectors {
+  display: flex;
+  flex-direction: column;
+
+  width: 47%;
+}
+.footer-selectors div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-selector-down {
+  margin-top: 25px;
 }
