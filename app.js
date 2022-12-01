@@ -15,7 +15,7 @@ function printContent(projects) {
     const firstThreeProjects = sortedProjects.slice(0, 3);
     console.log("firstThreeProjects: ", firstThreeProjects);
 
-    const divDeProyectos = document.getElementById("Recent-Projects-class2");
+    const divDeProyectos = document.getElementById("Recent-Projects-class");
     /*
     divDeProyectos.innerHTML = "Prueba";
 
