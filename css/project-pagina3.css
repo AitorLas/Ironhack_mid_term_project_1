@@ -1,4 +1,3 @@
-
 body {
   font-family: "Roboto";
   font-style: normal;
@@ -13,22 +12,33 @@ header {
   align-items: center;
 }
 
-.header-selectors-up a {
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
   text-decoration: inherit;
   color: inherit;
-
-  font-size: 14px;
-  color: rgba(107, 112, 141, 1);
 }
-.header-selectors-up {
+
+nav input,
+label {
+  visibility: hidden;
+}
+
+ul {
+  padding: 0px;
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
+  width: 300px;
+  font-size: 14px;
+  color: rgba(107, 112, 141, 1);
+  list-style: none;
 }
-
-
-
 
 .button-Contact-Us {
   height: 40px;
@@ -41,7 +51,6 @@ header {
 
 form {
   color: rgba(107, 112, 141, 1);
-
   margin: 0px 100px;
 }
 
@@ -53,7 +62,7 @@ h1 {
 }
 
 .full-name {
-  margin-top: 30px;
+  margin-top: 60px;
 
   font-size: 20px;
   display: flex;
@@ -173,6 +182,29 @@ footer p {
 }
 
 @media (max-width: 667px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav label {
+    visibility: visible;
+    color: rgba(107, 112, 141, 1);
+    width: 30px;
+    height: 30px;
+    font-size: 32px;
+
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+  }
+
   .email-phone {
     flex-direction: column;
   }
@@ -192,24 +224,11 @@ footer p {
   header {
     margin: 30px 20px 40px 20px;
   }
+  label {
+    margin-top: 12px;
+  }
+ 
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav label {
-    width: 30px;
-    height: 30px;
-    font-size: 32px;
-    color: #072ac8;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-  }
-  
   nav input {
     width: 30px;
     height: 30px;
@@ -219,12 +238,12 @@ footer p {
     position: absolute;
     top: 15px;
   }
-  
+
   nav input[type="checkbox"]:checked ~ ul {
     animation: fadein 1s forwards;
     display: block;
   }
-  
+
   nav ul {
     display: none;
     list-style: none;
@@ -234,27 +253,23 @@ footer p {
     position: absolute;
     top: 55px;
   }
-  
+
   nav a {
     cursor: pointer;
     text-decoration: none;
   }
-  
+
   .nav-a-color1 {
     color: #072ac8;
     font-size: 12px;
     font-weight: 500;
     line-height: 22.1px;
   }
-  
+
   .nav-a-color2 {
     color: #6b708d;
     font-size: 12px;
     font-weight: 500;
     line-height: 22.1px;
   }
-  
-
 }
-
-
