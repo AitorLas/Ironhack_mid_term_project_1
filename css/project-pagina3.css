@@ -17,14 +17,16 @@ nav {
   justify-content: space-between;
 }
 
+nav label {
+  visibility: hidden;
+}
+nav input {
+  visibility: hidden;
+}
+
 nav a {
   text-decoration: inherit;
   color: inherit;
-}
-
-nav input,
-label {
-  visibility: hidden;
 }
 
 ul {
@@ -204,7 +206,11 @@ footer p {
     position: absolute;
     top: 15px;
   }
-
+  /*
+  #ocultar-burber {
+    visibility: visible;
+  }
+*/
   .email-phone {
     flex-direction: column;
   }
@@ -227,7 +233,6 @@ footer p {
   label {
     margin-top: 12px;
   }
- 
 
   nav input {
     width: 30px;
