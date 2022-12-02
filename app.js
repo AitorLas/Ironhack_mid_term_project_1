@@ -1,5 +1,17 @@
 const API_URL = "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2"
 
+window.addEventListener("load", function () {
+  fetchProjects();
+});
+
+async function fetchProjects() {
+  const response = await fetch(API_URL);
+  const data = await response.json();
+  //console.log("data: ", data);
+  //console.log("data: ", data[1].name);
+  printContent(data);
+}
+
 function printContent(projects) {
     console.log(projects);
     const sortedProjects = projects.sort(function (a, b) {
@@ -14,7 +26,6 @@ function printContent(projects) {
     console.log("sortedProjects: ", sortedProjects);
     const firstThreeProjects = sortedProjects.slice(0, 3);
     console.log("firstThreeProjects: ", firstThreeProjects);
-
     const divDeProyectos = document.getElementById("Recent-Projects-class");
     /*
     divDeProyectos.innerHTML = "Prueba";
@@ -27,7 +38,6 @@ function printContent(projects) {
     </div>`
     divDeProyectos.innerHTML += div;
     */
-
     firstThreeProjects.forEach(function (project) {
         const div = `
             <div class="simplify-dashcoin-vectorify">
@@ -48,16 +58,3 @@ function printContent(projects) {
     });
 }
 
-
-
-async function fetchProjects() {
-    const response = await fetch(API_URL);
-    const data = await response.json();
-    console.log("data: ", data);
-    console.log("data: ", data[1].name);
-    printContent(data);
-}
-
-window.addEventListener("load", function () {
-    fetchProjects();
-  });
